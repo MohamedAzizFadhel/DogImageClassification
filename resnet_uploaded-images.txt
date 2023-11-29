@@ -1,0 +1,63 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 3 key-value pairs.
+Below are 3 of them:
+ 1 key:                  Bucket_01.jpg  label:                     bucket
+ 2 key:                  Poodle_01.jpg  label:                     poodle
+ 3 key:                  Poodle_02.jpg  label:                     poodle
+
+     MATCH:
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:                   bucket, pail
+
+                 Poodle_01.jpg: 
+Real:                     poodle   Classifier:        standard poodle, poodle
+
+                 Poodle_02.jpg: 
+Real:                     poodle   Classifier:        standard poodle, poodle
+
+ NOT A MATCH:
+
+# Total Images 3 # Matches: 3 # NOT Matches: 0
+
+     MATCH:
+
+                 Bucket_01.jpg: 
+Real:                     bucket   Classifier:                   bucket, pail  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                 Poodle_01.jpg: 
+Real:                     poodle   Classifier:        standard poodle, poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 Poodle_02.jpg: 
+Real:                     poodle   Classifier:        standard poodle, poodle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+# Total Images 3 # Matches: 3 # NOT Matches: 0
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  3  N Dog Images:  2  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  3  N Dog Images:  2  N NotDog Images:  1 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+
+*** Results Summary for CNN Model Architecture RESNET ***
+N Images: 3
+N Dog Images: 2
+N NOT-Dog Images: 1
+pct_correct_dogs: 100.0%
+pct_correct_breed: 100.0%
+pct_correct_notdogs: 100.0%
+pct_match: 100.0%
+
+** Total Elapsed Runtime: 0:0:3
